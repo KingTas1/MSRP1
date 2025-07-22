@@ -5,13 +5,15 @@
 }
 
 body{
-    background-color: #111;
+    background-color: #f1f1f1;
     font-family: 'Poppins', sans-serif;
 }
 
 /* Navigation */
 
-nav {
+
+
+.main-nav {
     position: fixed;
     /* top: 21px; */
     align-items: center;
@@ -20,16 +22,19 @@ nav {
 
 .nav__container {
     display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     align-items: center;
     background-color: #B23B53;
     justify-content: center;
 }
 
-a {
+.nav__link {
     text-decoration: none;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
-    color: #F1A80F;
+    color: #2A4B9B;
+    font-weight: bold;
     margin-inline: 16px;
 }
 
@@ -38,13 +43,15 @@ a {
     list-style: none;
     display: flex;
     list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .nav__button-logo {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    padding-top: 2px;
+    /* padding-top: 2px; */
     inline-size: 100%;
     margin-right: 100px;
     height: auto;
@@ -99,4 +106,64 @@ a {
     .nav__list {
         display: none;
     }
+}
+
+/* Header */
+
+.home-header {
+    block-size: 674px;
+    background-color: #111;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.header-faded {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    background-color: #111;
+    box-shadow: 0 0 100px 100px #111;
+}
+
+.header-jardin {
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    top: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.header-container {
+    block-size: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-block-start: 280px;
+    color: #e9e9e9;
+}
+
+.header-surtitle {
+    font-size: 18px;
+    color: #e9e9e9;
+    font-weight: 300;
+}
+
+.header-title {
+    font-family: "Antic Didone";
+    color: #d1d1d1;
+    font-size: 80px;
+    margin-block-end: 24px;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin-block-end: 14px;
 }
