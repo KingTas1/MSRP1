@@ -43,6 +43,8 @@ body{
 }
 .nav__link:hover {
     color: #05421d;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .nav__list {
@@ -178,18 +180,33 @@ body{
     font-family: "Antic Didone";
     font-size: 18px;
     color: var(--dark-black);
-    background-color: var(--orange);
-    padding-inline: 9px;
-    padding-block: 9px;
+    background-color: black;
+    /* padding-inline: 9px;
+    padding-block: 9px; */
     line-height: 133.33%;
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    min-inline-size: 236px;
+    /* min-inline-size: 236px; */
     align-self: flex-start;
     margin: 20px;
+    border-radius: 3px;
+}
+.header-button span {
+    display: inline-block;
+    background: #F1A80F;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 
+    transform 0.15s ease-out,
+    background-color 0.15s ease-out;
+}
+.header-button:hover span {
+    transform: translate(6px, -6px);
+    background: #B23B53;
 }
 
 .header-info {
@@ -250,7 +267,7 @@ body{
     .header-info {
         flex-direction: column;
         gap: 16px;
-        margin-block-end: 32px;
+        margin-top: 40px;
     }
 }
 
