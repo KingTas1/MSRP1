@@ -12,6 +12,7 @@
 body{
     background-color: #f1f1f1;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 h2 {
     font-family: "Antic Didone";
@@ -27,10 +28,13 @@ h2 {
     top: 0;
     align-items: center;
     width: 100%;
+    /* z-index: 9999; */
 }
 
 .nav__container {
     display: flex;
+    /* position: fixed; */
+    /* z-index: 900; */
     justify-content: space-between;
     padding: 1rem 2rem;
     align-items: center;
@@ -542,6 +546,7 @@ h2 {
     position: relative;
     display: flex;
     justify-content: center;
+    /* z-index: 1; */
 }
 .pricing-card {
     width: 300px;
@@ -606,7 +611,7 @@ h2 {
 }
 .c2 {
     transform: translateY(-10px);
-    z-index: 2;
+    /* z-index: 1; */
 }
 .c3 {
     transform: translateY(10px) rotate(10deg);
@@ -616,7 +621,7 @@ h2 {
     margin: 20px auto 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
     .pricing {
         padding-bottom: 60px;
     }
