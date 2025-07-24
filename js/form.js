@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (email === "" && phone === "") {
       emailError.textContent = "Veuillez entrer un email ou un numéro.";
-      phoneError.textContent = "Veuillez entrer un email ou un numéro.";
+      phoneError.textContent = "Veuillez entrer un numéro ou un email.";
       isValid = false;
     }
 
