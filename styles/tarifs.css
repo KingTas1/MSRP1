@@ -185,6 +185,27 @@ h2 {
   font-size: 14px;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.btn-tarifs {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1c4e80;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(28, 78, 128, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-tarifs:hover {
+    background-color: #163f68;
+    transform: translateY(-2px);
+}
+
 /* Footer Section */
 
 footer {
