@@ -57,8 +57,11 @@ h2 {
 }
 .nav__link:hover {
     color: #05421d;
-    text-decoration: underline;
     text-underline-offset: 3px;
+}
+.nav__link.active {
+    color: #05421d;
+    font-weight: bold;
 }
 
 .nav__list {

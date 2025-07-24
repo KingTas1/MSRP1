@@ -60,6 +60,10 @@ h2 {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+.nav__link.active {
+    color: #05421d;
+    font-weight: bold;
+}
 
 .nav__list {
     flex-shrink: 0;

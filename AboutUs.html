@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-  <link rel="stylesheet" href="styles/AboutUs.css">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles/AboutUs.css" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
@@ -15,9 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-  <header class="home-header">
+  </head>
+  <body>
+    <header class="home-header">
       <nav class="header-nav">
         <div class="nav__container">
           <div class="nav__logo">
@@ -45,7 +45,9 @@
           <ul class="nav__list">
             <li><a href="./index.html" class="nav__link">Accueil</a></li>
             <li>
-              <a href="./AboutUs.html" class="nav__link">Qui sommes-nous?</a>
+              <a href="./AboutUs.html" class="nav__link active"
+                >Qui sommes-nous?</a
+              >
             </li>
             <li>
               <a href="./prestation.html" class="nav__link">Nos prestations</a>
@@ -61,7 +63,65 @@
 
     <main>
       <h2 class="main-title">Quand les arbres rencontrent les hommes</h2>
+      <section class="team-section">
+        <div class="bob-container">
+          <div class="bob-text">
+            <h3 class="section-title">Bob, Le Maître des Hauteurs</h3>
+            <p>
+              Bob, c'est l'âme tranquille de Canopées. Depuis plus de 20 ans, il
+              grimpe aux arbres avec une aisance qui force le respect. Équipé de
+              sa corde, de son harnais et d'un calme à toute épreuve, il taille,
+              élagage et sculpte les arbres comme un artisan du vivant. Ancien
+              passionné d'escalade, il a naturellement mis ses talents au
+              service de la nature. Il connaît chaque essence d'arbre, comprend
+              leur structure, et sait comment les soigner pour qu'ils restent en
+              bonne santé. Pour les clients, Bob incarne la sécurité, la rigueur
+              et la maîtrise technique. Pour l'équipe, c'est un pilier, un grand
+              frère qu'on écoute et qu'on suit les yeux fermés.
+            </p>
+          </div>
+          <img src="assets/img/bob.jpg" alt="Bob" class="bob-img">
+        </div>
+
+        <div class="tom-container">
+          <div class="tom-text">
+            <h3 class="section-title">Tom, Le Jardinier Visionnaire</h3>
+            <p>
+              Là où Bob grimpe, Tom dessine. Tom a une imagination débordante et
+              un vrai sens de l'esthétique. Créatif et observateur, il visualise
+              chaque espace vert comme une toile à transformer. Avec lui, un
+              simple jardin devient un havre de paix ou une œuvre vivante.
+              Passionné par les plantes, les cycles naturels et les ambiances
+              paysagères, Tom aime concevoir des jardins durables et harmonieux,
+              en respectant le rythme des saisons et les envies des clients. Il
+              apporte à Canopées une touche poétique et moderne, toujours à la
+              recherche du petit détail qui fera la différence. Ses créations
+              mêlent fonctionnalité, écologie et beauté naturelle, pour des
+              extérieurs qui respirent la vie.
+            </p>
+          </div>
+          <img src="assets/img/Tom.jpeg" alt="Tom" class="tom-img">
+        </div>
+      </section>
+
+      <div class="return-container">
+        <a href="index.html" class="return-btn">Retour à la page d'Accueil</a>
+      </div>
     </main>
 
+    <footer>
+      <div class="footer-container">
+        <p class="footer-text">
+          Copyright © 2020 Canopées | All Rights Reserved
+        </p>
+        <ul class="footer-list">
+          <a href="">Mentions légales</a>
+          <a href="">CGV</a>
+          <a href="">CGU</a>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
