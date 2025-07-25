@@ -289,7 +289,6 @@ h2 {
     .header-info {
         flex-direction: column;
         gap: 16px;
-        margin-top: 40px;
     }
 }
 
