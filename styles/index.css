@@ -12,14 +12,14 @@
 }
 html,
 body {
+    width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
-img,
-section,
-div {
+img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 body {
   background-color: #f1f1f1;
@@ -372,7 +372,7 @@ h2 {
 .main-slider {
   max-width: 600px;
   height: 400px;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   position: relative;
 }
 .slide-img {
@@ -418,6 +418,7 @@ h2 {
 /* About us section */
 
 .main-about-us {
+  max-width: 100%;
   padding-block-start: 50px;
   background-color: #098136;
 }
@@ -441,16 +442,19 @@ h2 {
   margin-right: 15px;
   text-align: center;
 }
+.img-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
 .img-bobtom {
   display: block;
-  margin: 40px auto;
-  border-radius: 20px;
   width: 100%;
-  max-width: 650px;
   height: auto;
+  border-radius: 20px;
   object-fit: cover;
-  padding: 0 15px;
-  box-sizing: border-box;
 }
 .btn-wrapper {
   display: flex;
@@ -487,6 +491,16 @@ h2 {
     padding: 0 10px;
     display: block;
   } */
+}
+@media (max-width: 600px) {
+  .img-wrapper {
+    padding: 0 10px;
+    margin: 20px auto;
+  }
+
+  .img-bobtom {
+    border-radius: 12px;
+  }
 }
 
 /* Prestation section */
@@ -705,7 +719,7 @@ h2 {
 }
 
 .contact-container {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .contact-title {
